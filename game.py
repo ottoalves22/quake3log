@@ -7,10 +7,10 @@ def kill_sum(arr): #recebe como entrada uma lista de listas [[nome, abates], ...
         d += (j)
     return d
 
-class game(): #classe que gera um json com informações da partida
-    def __init__(self, nameEntry, playersEntry, killsEntry):
+class Game(): #classe que gera um json com informações da partida
+    def __init__(self, nameEntry, playersEntry, killsEntry, kdEntry):
         self.name = nameEntry
-        self.total_kills =  kill_sum(killsEntry)#sumatorio de kills
+        self.total_kills = (kdEntry)#sumatorio de kills
         self.players = playersEntry #lista ['Otto', 'Loga']
         self.kills = killsEntry #lista de lista [['Otto', 2], ['Logan', 5]]
 
@@ -19,13 +19,7 @@ class game(): #classe que gera um json com informações da partida
             self.name: {
                 'total_kills': self.total_kills,
                 'players': self.players,
-                'kills': {}
+                'kills': self.kills
             }
         }
-        d = defaultdict(list)
-        d = dict(d)
-        for i, j in self.kills:
-            d[i] = j
-
-        data[self.name]['kills'] = d
         return data
