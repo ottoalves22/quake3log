@@ -24,7 +24,7 @@ class Score():
             aux += jogadores[key]
         return aux
 
-    def playersList(jogadores):
+    def playersList(jogadores): #lista jogadores da partida
         aux = []
         for key in jogadores:
             aux.append(key)
