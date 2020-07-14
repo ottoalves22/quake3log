@@ -1,4 +1,7 @@
 from parser.parser import Parser
 
 parser = Parser()
-parser.parseMatch()
+matches = parser.parseMatch()
+for x in matches:
+    print(x)
+    print('\n')

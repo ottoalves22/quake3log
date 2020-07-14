@@ -5,7 +5,7 @@ import json
 import os
 
 diretorio = os.path.dirname(os.path.abspath(__file__))
-file = os.path.join(diretorio, 'games.log')
+log = os.path.join(diretorio, 'games.log')
 
 class Parser():
         def parseMatch(self): #funcao que exibe informações de morte de todos jogos no log e retorna uma lista com as mesmas
@@ -14,7 +14,7 @@ class Parser():
             jogadores = {} #jogadores e pontos
             allMatches = [] #lista com informações de cada partida
 
-            f = open(file, "r")
+            f = open(log, "r")
             for x in f:
                 if 'InitGame' in x:
                     game += 1
@@ -30,7 +30,5 @@ class Parser():
                     abateswrld = 0
                     jogadores = {}
                     resultados = partida.jsonificado()
-                    print(resultados)
-                    print('\n')
                     allMatches.append(resultados)
             return allMatches
