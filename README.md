@@ -20,7 +20,10 @@ Aplicação que transforma um log de uma partida de Quake 3 em JSON com estatís
 
     - API: flask run iniciará um servidor em localhost com a porta padrão (5000).
        - GET localhost:5000/ retornará um json com todas partidas parseadas
-       - GET localhost:5000/findMatch?id=<>  retornará um json com informações da partida com aquele id (no formato game_x, com x sendo o numero da partida) ou uma mensagem de erro caso tal partida não exista no log. A lista de ids pode ser vista na página inicial (localhost:5000/)
+       - GET localhost:5000/findMatch?id=<>  retornará um json com informações da partida com aquele id (no formato game_x, com x sendo o numero da partida) ou uma mensagem de erro caso tal partida não exista no log. A lista de ids pode ser vista na página inicial (localhost:5000/).
+
+
+       Observação: por questões de simplicidade o framework escolhido foi o flask, uma vez que o Django seria complexo demais para apenas essas duas tarefas simples (listar e encontrar partidas)
 
     - Testes:
 
