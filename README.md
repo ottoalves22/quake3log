@@ -24,6 +24,6 @@ Aplicação que transforma um log de uma partida de Quake 3 em JSON com estatís
 
   - Estrutura:
      Os arquivos execute____.py agem como executáveis para as classes contidas no diretório classes_package.
-     A classe Games é um modelo para uma partida, contendo um construtor e um método que retorna um dicionário.
-     A classe Parser é responsável por pegar o arquivo .log (que se encontra no mesmo diretório) e o transcreve para o formato json indicado acima utilizando a estrutura de dados de dicionário.
-     A classe Score agrupa diversos métodos auxiliares, por exemplo o método killed() que altera a pontuação dos jogadores que mataram outro jogador ou para jogadores que morreram para o ambiente (perdendo um ponto)
+      - A classe Games é um modelo para uma partida, contendo um construtor e um método que retorna um dicionário.
+      - A classe Parser é responsável por pegar o arquivo .log (que se encontra no mesmo diretório) e o transcreve para o formato json indicado acima utilizando a estrutura de dados de dicionário.
+      - A classe Score agrupa diversos métodos auxiliares, por exemplo o método killed() que altera a pontuação dos jogadores que mataram outro jogador ou para jogadores que morreram para o ambiente (perdendo um ponto)
