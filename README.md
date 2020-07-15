@@ -1,4 +1,6 @@
 # quake3log
+https://github.com/ottoalves22/quake3log
+
 Aplicação que transforma um log de uma partida de Quake 3 em JSON com estatísticas a partir de um log.
 
  - Instalação: Crie um ambiente virtual, ative-o e execute o comando - pip3 install -r requirements.txt -
@@ -25,7 +27,7 @@ Aplicação que transforma um log de uma partida de Quake 3 em JSON com estatís
 
        Observação: por questões de simplicidade o framework escolhido foi o flask, uma vez que o Django seria complexo demais para apenas essas duas tarefas simples (listar e encontrar partidas)
 
-    - Testes:
+    - Testes: executar py.test para testar todas funções auxiliares
 
   - Estrutura:
      Os arquivos execute____.py agem como executáveis para as classes contidas no diretório classes_package.
